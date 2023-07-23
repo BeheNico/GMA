@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');    /*el import de la fuente desde google*/
+font-face{
+    font-family: 'Roboto Mono';
+    src: url(./assets/Roboto_Condensed.zip);    /*la descarga de la fuente*/
+}
+
+body{
+    background-image: url(../assets/img/Fondo_GMA_1920.png);
+    font-family: 'Roboto Mono';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #0e0e0eec;
+}
+.Wsp{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+.wsp_logo{
+    color: green;
+    font-size: 3rem;
+}
+
+.boton_presupuesto{
+    margin-bottom: 20px;
+}
+.presupuesto{
+    background-color: #ff0000;
+    color: #000000;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    width: 220px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #0e0e0eec;
+    width: 100%;
+    margin-top: auto;
+}
+
+.img{
+    width: 600px;
+}
+
+.contacto form{
+    background-color: #000000;
+}
