@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');    /*el import de la fuente desde google*/
 font-face{
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto condensed';
     src: url(./assets/Roboto_Condensed.zip);    /*la descarga de la fuente*/
 }
 
 body{
     background-image: url(../assets/img/Fondo_GMA_1920.png);
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto condensed';
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,6 +15,7 @@ body{
 header{
     background-color: #0e0e0eec;
 }
+
 .Wsp{
     position: fixed;
     right: 20px;
