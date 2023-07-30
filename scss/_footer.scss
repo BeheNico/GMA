@@ -1,0 +1,9 @@
+@media screen and (max-width: 767px){
+    footer .maps{
+        @include width-height(180px, 180px)
+    }
+    footer .redes img{
+            width: $font-medium;
+            margin: 2px;
+    }
+}

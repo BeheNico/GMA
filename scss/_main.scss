@@ -1,0 +1,34 @@
+.boton_presupuesto{
+    margin-bottom: $espaciado-20;
+
+    .presupuesto{
+        background-color: map-get($colores, red);
+        color: map-get($colores, black);
+        font-size: $font-normal-half;
+        border-radius: 8px;
+        width: 220px;
+        height: 37px;
+        display: $container-flex;
+        justify-content: $center;
+        text-align: $center;
+        text-decoration: none;
+        margin: 0 $auto;
+    }
+}
+
+.Wsp{
+    position: fixed;
+    right: $espaciado-20;
+    bottom: $espaciado-10;
+
+    .wsp_logo{
+        color: map-get($colores, green);
+        font-size: $font-large;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main .wsp_logo i{
+        font-size: $font-medium;
+    }
+}

@@ -1,5 +1,13 @@
-/* Variables */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"); /*el import de la fuente desde google*/
+/* VARIABLES */
+/* MAPS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*el import de la fuente desde google*/
 font-face {
   font-family: "Roboto condensed";
   src: url(./assets/Roboto_Condensed.zip); /*la descarga de la fuente*/
@@ -17,16 +25,21 @@ header {
   background-color: rgba(14, 14, 14, 0.9254901961);
 }
 
-.Wsp {
-  position: fixed;
-  right: 20px;
-  bottom: 10px;
-}
-.Wsp .wsp_logo {
-  color: green;
-  font-size: 3rem;
+.img {
+  width: 600px;
 }
 
+footer {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    width: 170px;
+  }
+}
 .boton_presupuesto {
   margin-bottom: 20px;
 }
@@ -44,12 +57,28 @@ header {
   margin: 0 auto;
 }
 
-.img {
-  width: 600px;
+.Wsp {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+.Wsp .wsp_logo {
+  color: green;
+  font-size: 3rem;
 }
 
-footer {
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  margin-top: auto;
+@media screen and (max-width: 767px) {
+  main .wsp_logo i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .maps {
+    width: 180px;
+    height: 180px;
+  }
+  footer .redes img {
+    width: 2rem;
+    margin: 2px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

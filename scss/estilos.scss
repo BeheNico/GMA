@@ -1,80 +1,8 @@
-/* Variables */
-$color-red: red;
-$color-black: rgb(0, 0, 0);
-$color-green: green;
-
-$font-main: 'Roboto condensed';
-
-$espaciado-10: 10px;
-$espaciado-20: 20px;
-$espaciado-full: 100%;
-
-$font-normal: 1rem;
-$font-normal-half: 1.5rem;
-$font-medium: 2rem;
-$font-large: 3rem;
-
-$auto: auto;
-$center: center;
-
-$width-img: 600px;
-
-$container-flex: flex;
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');    /*el import de la fuente desde google*/
-font-face{
-    font-family: $font-main;
-    src: url(./assets/Roboto_Condensed.zip);    /*la descarga de la fuente*/
-}
-
-body{
-    background-image: url(../assets/img/Fondo_GMA_1920.png);
-    font-family: $font-main;
-    display: $container-flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header{
-    background-color: #0e0e0eec;
-}
-
-.Wsp{
-    position: fixed;
-    right: $espaciado-20;
-    bottom: $espaciado-10;
-
-    .wsp_logo{
-        color: $color-green;
-        font-size: $font-large;
-    }
-}
-
-.boton_presupuesto{
-    margin-bottom: $espaciado-20;
-
-    .presupuesto{
-        background-color: $color-red;
-        color: $color-black;
-        font-size: $font-normal-half;
-        border-radius: 8px;
-        width: 220px;
-        height: 37px;
-        display: $container-flex;
-        justify-content: $center;
-        text-align: $center;
-        text-decoration: none;
-        margin: 0 $auto;
-    }
-}
-
-.img{
-    width: $width-img;
-}
-
-footer{
-    background-color: $color-black;
-    width: $espaciado-full;
-    margin-top: $auto;
-}
+@import 'mixins.scss';
+@import 'variables.scss';
+@import 'reset.scss';
+@import 'body.scss';
+@import 'utilitarias.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
