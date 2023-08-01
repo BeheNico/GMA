@@ -1,6 +1,54 @@
 /* VARIABLES */
 /* MAPS */
+/* BOTON DEL PRESUPUESTO */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+.presupuesto {
+  animation-name: boton-presupuesto;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  transition: 0.5s;
+}
+
+.presupuesto:hover {
+  transform: scale(1.2);
+}
+
+/* LOS NAV-LINKS */
+.link {
+  animation-name: link;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  transition: 0.5s;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+/* IMG DE GALERIA */
+.img {
+  animation-name: link;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  transition: 0.5s;
+}
+
+.img:hover {
+  transform: scale(1.3);
+}
+
+/*IMG-LOGO*/
+.logo {
+  animation-name: link;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,20 +89,21 @@ footer {
   }
 }
 .boton_presupuesto {
-  margin-bottom: 20px;
+  margin: 3%;
 }
 .boton_presupuesto .presupuesto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: red;
   color: rgb(0, 0, 0);
   font-size: 1.5rem;
   border-radius: 8px;
   width: 220px;
   height: 37px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   text-decoration: none;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .Wsp {
@@ -74,11 +123,21 @@ footer {
 }
 @media screen and (max-width: 767px) {
   footer .maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe {
     width: 180px;
     height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
   footer .redes img {
     width: 2rem;
-    margin: 2px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */

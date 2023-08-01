@@ -1,4 +1,10 @@
-@mixin width-height($width,$height){
+@mixin width-height ($width, $height){
     width: $width;
     height: $height;
 }
+
+@mixin displayF-justifyC-alignI ($displayF, $justifyC, $alignI){
+    display: $displayF;
+    justify-content: $justifyC;
+    align-items: $alignI;   
+} 

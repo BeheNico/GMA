@@ -1,18 +1,17 @@
 .boton_presupuesto{
-    margin-bottom: $espaciado-20;
+    margin: 3%;
 
     .presupuesto{
+        @include displayF-justifyC-alignI(flex, center, center);
         background-color: map-get($colores, red);
         color: map-get($colores, black);
         font-size: $font-normal-half;
         border-radius: 8px;
         width: 220px;
         height: 37px;
-        display: $container-flex;
-        justify-content: $center;
-        text-align: $center;
         text-decoration: none;
         margin: 0 $auto;
+        margin-top: $espaciado-20;
     }
 }
 
