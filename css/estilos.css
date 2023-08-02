@@ -1,7 +1,19 @@
 /* VARIABLES */
 /* MAPS */
-/* BOTON DEL PRESUPUESTO */
+/* LOS NAV-LINKS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+.link {
+  animation-name: link;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  transition: 0.5s;
+}
+
+.link:hover {
+  transform: scale(1.2);
+}
+
+/* BOTON DEL PRESUPUESTO */
 .presupuesto {
   animation-name: boton-presupuesto;
   animation-duration: 1s;
@@ -11,18 +23,6 @@
 
 .presupuesto:hover {
   transform: scale(1.2);
-}
-
-/* LOS NAV-LINKS */
-.link {
-  animation-name: link;
-  animation-duration: 1s;
-  animation-delay: 0s;
-  transition: 0.5s;
-}
-
-.link:hover {
-  transform: scale(1.1);
 }
 
 /* IMG DE GALERIA */
@@ -113,6 +113,19 @@ footer {
 }
 .Wsp .wsp_logo {
   color: green;
+  font-size: 3rem;
+}
+
+.error {
+  font-size: 5rem;
+  align-items: center;
+}
+
+.error404 {
+  font-size: 8rem;
+}
+
+.pag-error {
   font-size: 3rem;
 }
 

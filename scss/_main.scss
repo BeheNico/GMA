@@ -26,6 +26,17 @@
     }
 }
 
+.error{
+    font-size: 5rem;
+    align-items: center;
+}
+.error404{
+    font-size: 8rem;
+}
+.pag-error{
+    font-size: 3rem;
+}
+
 @media screen and (max-width: 767px) {
     main .wsp_logo i{
         font-size: $font-medium;
