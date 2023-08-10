@@ -88,6 +88,19 @@ footer {
     width: 170px;
   }
 }
+.info-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
 .boton_presupuesto {
   margin: 3%;
 }
