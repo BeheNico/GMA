@@ -61,8 +61,24 @@ font-face {
   src: url(./assets/Roboto_Condensed.zip); /*la descarga de la fuente*/
 }
 
+.pag-error {
+  width: 100%;
+  background-position: center center;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url(../assets/img/Fondo_GMA_1920.png);
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
 body {
   background-image: url(../assets/img/Fondo_GMA_1920.png);
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Roboto condensed";
   display: flex;
   flex-direction: column;
@@ -129,22 +145,31 @@ footer {
   font-size: 3rem;
 }
 
-.error {
-  font-size: 5rem;
+.pag-error-main {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin: auto;
+  max-width: 700px;
+  font-family: "Roboto condensed";
 }
-
-.error404 {
-  font-size: 8rem;
-}
-
-.pag-error {
-  font-size: 3rem;
+.pag-error-main div {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 767px) {
   main .wsp_logo i {
     font-size: 2rem;
+  }
+  .img {
+    width: 350px;
+  }
+  .pag-error-main {
+    width: 350px;
+    margin-top: 20%;
+    margin-bottom: 20%;
   }
 }
 @media screen and (max-width: 767px) {

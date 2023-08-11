@@ -37,19 +37,30 @@
     }
 }
 
-.error{
-    font-size: 5rem;
-    align-items: $center;
-}
-.error404{
-    font-size: 8rem;
-}
-.pag-error{
-    font-size: $font-large;
+.pag-error-main{
+    @include displayF-justifyC-alignI (flex, center, center);
+    margin: $auto;
+    max-width: 700px;
+    font-family: $font-main;
+    
+        div{
+            background-color: map-get($colores, black);;
+            padding: 30px;
+            border-radius: $espaciado-10;
+        }
 }
 
 @media screen and (max-width: 767px) {
     main .wsp_logo i{
         font-size: $font-medium;
+    }
+    .img{
+        width: 350px;
+    }
+    
+    .pag-error-main{
+        width: 350px;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
 }
