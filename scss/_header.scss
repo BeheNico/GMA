@@ -1,5 +1,15 @@
 @media screen and (max-width: 767px) {
     header .logo{
     width: 170px;
+    object-fit: cover;
+    }
+    .link:hover{
+        transform: scale(1.01);
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .link:hover{
+        transform: scale(1.01);
+    }
+}    

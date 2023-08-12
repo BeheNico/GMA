@@ -1,3 +1,15 @@
+.img-inicio-div{
+    width: 100vw;
+    max-width: 1800px;
+    min-width: 200px;
+    margin: $auto;
+
+    img{
+        width: 100%;
+        border-radius: $espaciado-10;
+    }
+}
+
 .info-contacto{
     @include displayF-justifyC-alignI (flex, center, center);
     margin: 0 $auto;
@@ -55,12 +67,22 @@
         font-size: $font-medium;
     }
     .img{
-        width: 350px;
+        width: 150px;
     }
     
     .pag-error-main{
         width: 350px;
         margin-top: 20%;
         margin-bottom: 20%;
+    } 
+
+    .img-inicio-div{
+        @include displayF-justifyC-alignI (flex, center, center);
+        
+        img{
+            width: 95%;
+            height: 150px;
+            object-fit: cover;
+        }
     }
 }

@@ -102,8 +102,28 @@ footer {
 @media screen and (max-width: 767px) {
   header .logo {
     width: 170px;
+    object-fit: cover;
+  }
+  .link:hover {
+    transform: scale(1.01);
   }
 }
+@media screen and (max-width: 1000px) {
+  .link:hover {
+    transform: scale(1.01);
+  }
+}
+.img-inicio-div {
+  width: 100vw;
+  max-width: 1800px;
+  min-width: 200px;
+  margin: auto;
+}
+.img-inicio-div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .info-contacto {
   display: flex;
   justify-content: center;
@@ -164,12 +184,22 @@ footer {
     font-size: 2rem;
   }
   .img {
-    width: 350px;
+    width: 150px;
   }
   .pag-error-main {
     width: 350px;
     margin-top: 20%;
     margin-bottom: 20%;
+  }
+  .img-inicio-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-inicio-div img {
+    width: 95%;
+    height: 150px;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 767px) {
