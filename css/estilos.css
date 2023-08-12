@@ -114,13 +114,16 @@ footer {
   }
 }
 .img-inicio-div {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
   max-width: 1800px;
-  min-width: 200px;
-  margin: auto;
+  min-width: 300px;
+  margin: 0 auto;
 }
 .img-inicio-div img {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
 }
 
@@ -191,6 +194,8 @@ footer {
     margin-top: 20%;
     margin-bottom: 20%;
   }
+}
+@media screen and (max-width: 1000px) {
   .img-inicio-div {
     display: flex;
     justify-content: center;
