@@ -1,0 +1,15 @@
+@media screen and (max-width: 767px){
+    footer .maps{
+        @include displayF-justifyC-alignI (flex, center, center);
+    }
+    iframe{
+        @include width-height(180px, 180px);
+        @include displayF-justifyC-alignI (flex, center, center);
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    footer .redes img{
+            width: $font-medium;
+            margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');    /*el import de la fuente desde google*/
+font-face{
+    font-family: $font-main;
+    src: url(./assets/Roboto_Condensed.zip);    /*la descarga de la fuente*/
+}
+
+.pag-error{
+    width: 100%;
+    background-position: center center;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        background-image: url(../assets/img/Fondo_GMA_1920.png);
+        min-height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}

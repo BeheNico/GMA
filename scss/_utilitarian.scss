@@ -1,0 +1,23 @@
+body{
+    background-image: url(../assets/img/Fondo_GMA_1920.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $font-main;
+    display: $container-flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #0e0e0eec;
+}
+
+.img{
+    width: $width-img;
+}
+
+footer{
+    background-color: map-get($colores, black);
+    width: $espaciado-full;
+    margin-top: $auto;
+}
