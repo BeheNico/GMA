@@ -186,6 +186,9 @@ footer {
   main .wsp_logo i {
     font-size: 2rem;
   }
+  .texto-sobremi {
+    margin: 50%;
+  }
   .img {
     width: 300px;
   }
