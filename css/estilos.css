@@ -136,6 +136,19 @@ footer {
   width: 80%;
 }
 
+.contenedor-sobre-mi {
+  display: flex;
+  align-items: center;
+  margin: 100px auto;
+  width: 90%;
+}
+
+.img-sobre-mi {
+  max-width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+
 .negrita {
   font-weight: bold;
 }
@@ -186,8 +199,8 @@ footer {
   main .wsp_logo i {
     font-size: 2rem;
   }
-  .texto-sobremi {
-    margin: 50%;
+  .boton_presupuesto {
+    margin: 50px;
   }
   .img {
     width: 300px;
@@ -210,6 +223,12 @@ footer {
     object-fit: cover;
   }
 }
+@media screen and (max-width: 1300px) {
+  .contenedor-sobre-mi {
+    display: block;
+    align-items: initial;
+  }
+}
 @media screen and (max-width: 767px) {
   footer .maps {
     display: flex;
@@ -227,6 +246,11 @@ footer {
   }
   footer .redes img {
     width: 2rem;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  footer .redes img {
     margin-bottom: 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */

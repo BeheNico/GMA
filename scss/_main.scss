@@ -18,6 +18,19 @@
     width: 80%;
 }
 
+.contenedor-sobre-mi{
+    display: flex;
+    align-items: center;
+    margin: 100px $auto;
+    width: 90%;
+}
+
+.img-sobre-mi{
+    max-width: 250px;
+    float: left;
+    margin-right: $espaciado-10;
+}
+
 .negrita{
     font-weight: bold;
 }
@@ -68,9 +81,9 @@
         font-size: $font-medium;
     }
 
-    .texto-sobremi{
-        margin: 50%;
-    }
+    .boton_presupuesto {
+        margin: 50px;
+      }
 
     .img{
         width: 300px;
@@ -91,5 +104,12 @@
             height: 150px;
             object-fit: cover;
         }
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .contenedor-sobre-mi {
+        display: block;
+        align-items: initial;
     }
 }
