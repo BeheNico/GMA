@@ -59,28 +59,31 @@
                         <h1 class="text-center text-primary fs-2">Contacto</h1>
                     </div>
                     <div class="mb-2">
-                        <form action="404.html">
+                        <form action="https://formsubmit.co/guillebass141973@gmail.com" method="POST">
                             <div class="row">
                                 <div class="mb-2 col-6">
-                                    <label for="nombre">Nombre:</label>
+                                    <label class="text-white" for="nombre">Nombre:</label>
                                     <input type="text" class="form-control" name="nombre" id="nombre" placeholder="ej: Nicolas" required> 
                                 </div>
                                 <div class="mb-2 col-6">
-                                    <label for="apellido">Apellido:</label>
+                                    <label class="text-white" for="apellido">Apellido:</label>
                                     <input type="text" class="form-control" name="apellido" id="apellido" placeholder="ej: Alvarez" required> 
                                 </div>
                             </div>
                             <div class="mb-2">
-                                <label for="email">Email:</label>
+                                <label class="text-white" for="email">Email:</label>
                                 <input type="text" class="form-control" name="email" id="email" placeholder="ejemplo@gmail.com" required> 
                             </div>
                             <div class="mb-2">
-                                <label for="mensaje">Mensaje:</label>
+                                <label class="text-white" for="mensaje">Mensaje:</label>
                                 <textarea class="form-control" name="mensaje" id="mensaje" placeholder="ej: queria saber sobre..."></textarea>
                             </div>
                             <div class="mb-2">
                                 <input class="btn btn-primary" type="submit" value="Enviar">
-                                <input class="btn btn-primary" type="reset" value="Reiniciar">   
+                                <input class="btn btn-primary" type="reset" value="Reiniciar">
+                                <!-- las siguientes 2 lineas son para evitar el captcha -->
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contacto.html">
+                                <input type="hidden" name="_captcha" value="false">
                             </div>               
                         </form>
                     </div>

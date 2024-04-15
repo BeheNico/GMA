@@ -76,6 +76,12 @@
         }
 }
 
+@media screen and (max-width: 495px) {
+    .img-sobre-mi{
+        margin: 75px;
+    }        
+}
+
 @media screen and (max-width: 767px) {
     main .wsp_logo i{
         font-size: $font-medium;
