@@ -76,15 +76,6 @@
         }
 }
 
-@media screen and (max-width: 495px) {
-    .img-sobre-mi{
-        max-width: 100px;
-        /*float: none;
-        margin: 75px;
-        margin-top: -80px;*/
-    }
-}
-
 @media screen and (max-width: 767px) {
     main .wsp_logo i{
         font-size: $font-medium;
@@ -114,10 +105,13 @@
             object-fit: cover;
         }
     }
+    .img-sobre-mi{
+        max-width: 100px;
+    }
 }
 
 @media screen and (max-width: 1300px){
     .contenedor-sobre-mi {
-        display: block;
+        display: block; 
     }
 }
