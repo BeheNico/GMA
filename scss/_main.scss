@@ -28,7 +28,7 @@
 .img-sobre-mi{
     max-width: 250px;
     float: left;
-    margin-right: $espaciado-10;
+    margin-right: $espaciado-20;
 }
 
 .negrita{
@@ -78,9 +78,11 @@
 
 @media screen and (max-width: 495px) {
     .img-sobre-mi{
+        max-width: 100px;
+        /*float: none;
         margin: 75px;
-        margin-top: -80px;
-    }        
+        margin-top: -80px;*/
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -117,6 +119,5 @@
 @media screen and (max-width: 1300px){
     .contenedor-sobre-mi {
         display: block;
-        align-items: initial;
     }
 }

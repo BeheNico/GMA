@@ -146,7 +146,7 @@ footer {
 .img-sobre-mi {
   max-width: 250px;
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .negrita {
@@ -197,8 +197,10 @@ footer {
 
 @media screen and (max-width: 495px) {
   .img-sobre-mi {
+    max-width: 100px;
+    /*float: none;
     margin: 75px;
-    margin-top: -80px;
+    margin-top: -80px;*/
   }
 }
 @media screen and (max-width: 767px) {
@@ -232,7 +234,6 @@ footer {
 @media screen and (max-width: 1300px) {
   .contenedor-sobre-mi {
     display: block;
-    align-items: initial;
   }
 }
 @media screen and (max-width: 767px) {
