@@ -11,6 +11,34 @@
     }
 }
 
+.card {
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #ffffff;
+}
+
+.custom-card-size {
+    width: 98%;
+    margin: auto;
+}
+
+.custom-card-size .card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.foto-obra{
+    width: 700px;
+}
+
 .info-contacto{
     @include displayF-justifyC-alignI (flex, center, center);
     margin: 0 $auto;
@@ -74,6 +102,17 @@
             padding: 30px;
             border-radius: $espaciado-10;
         }
+}
+
+@media screen and (max-width: 570px) {
+    .custom-card-size .card-img-top {
+        height: auto;
+    }
+    .custom-card-size .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 767px) {

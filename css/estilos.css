@@ -34,7 +34,7 @@
 }
 
 .img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 /*IMG-LOGO*/
@@ -67,7 +67,7 @@ font-face {
   object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   body {
     background-image: url(../assets/img/Fondo_GMA_1920.png);
     min-height: 100vh;
@@ -79,6 +79,8 @@ body {
   background-image: url(../assets/img/Fondo_GMA_1920.png);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   font-family: "Roboto condensed";
   display: flex;
   flex-direction: column;
@@ -125,6 +127,34 @@ footer {
 .img-inicio-div img {
   width: 90%;
   border-radius: 10px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #ffffff;
+}
+
+.custom-card-size {
+  width: 98%;
+  margin: auto;
+}
+
+.custom-card-size .card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.foto-obra {
+  width: 700px;
 }
 
 .info-contacto {
@@ -195,6 +225,16 @@ footer {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 570px) {
+  .custom-card-size .card-img-top {
+    height: auto;
+  }
+  .custom-card-size .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
 @media screen and (max-width: 767px) {
   main .wsp_logo i {
     font-size: 2rem;
