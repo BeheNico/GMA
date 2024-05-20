@@ -4,6 +4,10 @@ font-face{
     src: url(./assets/Roboto_Condensed.zip);    /*la descarga de la fuente*/
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .pag-error{
     width: 100%;
     background-position: center center;

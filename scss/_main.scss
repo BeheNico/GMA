@@ -10,31 +10,33 @@
         border-radius: $espaciado-10;
     }
 }
+/* --------------------------------------------GALERIA-------------------------------------------------------------------------*/
+.modal-dialog {
+    margin-top: 5%;
+} 
 
-.card {
-    cursor: pointer;
-}
-
-.modal-content {
-    background-color: #ffffff;
-}
-
-.custom-card-size {
-    width: 98%;
-    margin: auto;
-}
-
-.custom-card-size .card-img-top {
+.custom-card-size .card-img-top { /*card*/
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-.carousel-inner img {
+.modal-dialog{ /*card abierta*/
     width: 100%;
-    height: auto;
 }
 
+.custom-card-size { /**/
+    width: 98%;
+    margin: auto;
+}
+
+.carousel-item img { /**/
+    width: 70rem;
+    height: 44rem;
+    object-fit: cover;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
 .foto-obra{
     width: 700px;
 }
@@ -104,18 +106,30 @@
         }
 }
 
-@media screen and (max-width: 570px) {
-    .custom-card-size .card-img-top {
-        height: auto;
-    }
+@media screen and (max-width: 576px){
     .custom-card-size .card-img-top {
         width: 100%;
         height: 200px;
         object-fit: cover;
     }
+
+    .modal-dialog{
+        margin: 0 auto;
+    }
+
+    .modal-content{
+        margin-top: 40%;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        height: auto; /* Mantén la proporción de la imagen */
+        margin: 0 auto; /* Centra la imagen dentro del carrusel */
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 577px) and (max-width: 768px){
     main .wsp_logo i{
         font-size: $font-medium;
     }
@@ -132,10 +146,23 @@
         width: 350px;
         margin-top: 20%;
         margin-bottom: 20%;
+    }
+
+    .modal-dialog{
+        @include displayF-justifyC-alignI (flex, center, center);
+    }
+
+    .modal-content {
+        margin-top: 40%;
     } 
+
+    .carousel-item img {
+        width: 100%;
+        height: 25rem
+    }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 992px){
     .img-inicio-div{
         @include displayF-justifyC-alignI (flex, center, center);
         img{
@@ -144,13 +171,45 @@
             object-fit: cover;
         }
     }
+
     .img-sobre-mi{
         max-width: 100px;
     }
+
+    .modal-dialog{
+        @include displayF-justifyC-alignI (flex, center, center);
+        margin-top: 18%;
+    } 
+
+    .carousel-item img {
+        width: 30rem;
+        height: 30rem
+    }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (min-width: 993px) and (max-width: 1200px){
     .contenedor-sobre-mi {
         display: block; 
     }
+
+    .carousel-item img {
+        width: 48rem;
+        height: 40rem;
+    }
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1920px){
+    /*none*/
+}
+
+
+
+
+
+
+/*    
+    .modal-content {
+        @include displayF-justifyC-alignI (flex, center, center);
+    } 
+    
+*/
