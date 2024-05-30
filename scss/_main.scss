@@ -47,6 +47,7 @@
 .contenedor-sobre-mi {
     width: 90%;
     margin: 0 auto;
+    margin-top: 5%;
     overflow: hidden;
     padding: 20px;
     border-radius: 8px;
@@ -140,6 +141,10 @@
         width: 100%;
         height: $auto;
         margin: 0 $auto; 
+    }
+
+    .formulario{
+        padding: 5%;
     }
 }
 

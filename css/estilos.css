@@ -96,6 +96,10 @@ footer {
   margin-top: auto;
 }
 
+.link {
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   header .logo {
     width: 170px;
@@ -162,6 +166,7 @@ footer {
 .contenedor-sobre-mi {
   width: 90%;
   margin: 0 auto;
+  margin-top: 5%;
   overflow: hidden;
   padding: 20px;
   border-radius: 8px;
@@ -250,6 +255,9 @@ footer {
     width: 100%;
     height: auto;
     margin: 0 auto;
+  }
+  .formulario {
+    padding: 5%;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
