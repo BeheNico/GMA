@@ -1,24 +1,20 @@
-body{
-    background-image: url(../assets/img/Fondo_GMA_1920.png);
-    background-attachment: fixed;
+body {
+    background-image: url(../assets/img/Fondo_GMA_1920.webp);
     background-size: cover;
-    background-position: center top;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    font-family: $font-main;
-    display: $container-flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-header{
+header {
     background-color: #0e0e0eec;
 }
 
-.img{
+.img {
     width: $width-img;
 }
 
-footer{
+footer {
     background-color: map-get($colores, black);
     width: $espaciado-full;
     margin-top: $auto;

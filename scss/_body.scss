@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');    /*el import de la fuente desde google*/
-font-face{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+font-face {
     font-family: $font-main;
-    src: url(./assets/Roboto_Condensed.zip);    /*la descarga de la fuente*/
+    src: url(./assets/Roboto_Condensed.zip);
 }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden;  
+    margin-top: 50px;
+
+    .sticky-top{
+        position: fixed;
+        width: 100%;
+    }
 }
 
-.pag-error{
+.pag-error {
     width: 100%;
     background-position: center center;
     object-fit: cover;
-}
-
-@media screen and (max-width: 1200px) {
-    body{
-        background-image: url(../assets/img/Fondo_GMA_1920.png);
-        min-height: 100vh;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
 }

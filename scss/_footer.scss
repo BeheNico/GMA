@@ -1,21 +1,32 @@
-@media screen and (max-width: 767px){
-    footer .maps{
+@media screen and (min-width: 446px) and (max-width: 601px) {
+    .redes-responsive{
         @include displayF-justifyC-alignI (flex, center, center);
-    }
-    iframe{
-        @include width-height(180px, 180px);
-        @include displayF-justifyC-alignI (flex, center, center);
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    footer .redes img{
-            width: $font-medium;
-            margin-bottom: 10px;
     }
 }
 
-@media screen and (max-width: 1300px){
-    footer .redes img{
+@media screen and (max-width: 767px){
+    .redes img {
+        width: $font-medium; 
+    }
+
+    .maps {
+        @include displayF-justifyC-alignI (flex, center, center);
+    }
+
+    iframe {
+        @include width-height(180px, 180px);
+    }    
+}
+
+@media screen and (max-width: 1300px) {
+    footer .redes img {
         margin-bottom: $espaciado-10;
     }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+   iframe{
+    width: 400px;
+    height: 200px;
+   }
 }
