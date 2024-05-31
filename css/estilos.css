@@ -335,9 +335,6 @@ footer {
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 1920px) {
-  /*none*/
-}
 @media screen and (min-width: 446px) and (max-width: 601px) {
   .redes-responsive {
     display: flex;
